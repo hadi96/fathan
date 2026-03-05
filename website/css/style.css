@@ -1,0 +1,99 @@
+/* Base resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header */
+.site-header {
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 1rem 0;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+.section h2 {
+  margin-bottom: 1rem;
+  color: #6a0dad;
+}
+
+.activities .activity-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  padding: 0.5rem 1rem;
+}
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
